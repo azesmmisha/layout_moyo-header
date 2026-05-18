@@ -24,14 +24,15 @@ body {
 
 .header-menu-list {
   display: flex;
-  list-style: none;
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
+  list-style: none;
   margin: 0;
+  padding-inline-start: 0;
 }
 
-.header-menu-item a.header-menu-link {
+.header-menu-item .header-menu-link {
   position: relative;
   color: #000;
   text-decoration: none;
@@ -43,7 +44,7 @@ body {
   margin-right: 20px;
 }
 
-.header-menu-item a.header-menu-link.is-active::after {
+.header-menu-item .header-menu-link.is-active::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -55,6 +56,6 @@ body {
 }
 
 .header-menu-item a.header-menu-link.is-active,
-.header-menu-item a:hover {
+.header-menu-item .header-menu-link:hover {
   color: var(--color-blue);
 }
